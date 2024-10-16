@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+</head>
+<body>
+    <h1>Personal Information Form</h1>
+
+
+    <form>
+
+        <fieldset>
+            <legend>General Info</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="maritalStatus">Marital Status:</label>
+            <input type="text" id="maritalStatus" name="maritalStatus"><br><br>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality"><br><br>
+
+            <legend>Address</legend>
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" id="streetAddress" name="streetAddress"><br><br>
+
+            <label for="addressLine2">Address Line 2:</label>
+            <input type="text" id="addressLine2" name="addressLine2"><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="state">State/Region/Province:</label>
+            <input type="text" id="state" name="state"><br><br>
+
+            <label for="postalCode">Postal / Zip Code:</label>
+            <input type="text" id="postalCode" name="postalCode"><br><br>
+       
+
+       
+            <legend>Contact Info</legend>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <legend>Medical Info</legend>
+            <label for="medicalInfo">Medical Information if any (Existing conditions/ Allergies):</label><br>
+            <textarea id="medicalInfo" name="medicalInfo" rows="4" cols="50"></textarea><br><br>
+
+            <label for="emergencyContactName">Emergency Contact Name:</label>
+            <input type="text" id="emergencyContactName" name="emergencyContactName"><br><br>
+
+            <label for="emergencyContactNumber">Emergency Contact Number:</label>
+            <input type="tel" id="emergencyContactNumber" name="emergencyContactNumber"><br><br>
+        
+            <legend>Education Info</legend>
+            <label for="education">Highest Level of Education:</label>
+            <input type="text" id="education" name="education"><br><br>
+
+            <label for="school">School/ University Name:</label>
+            <input type="text" id="school" name="school"><br><br>
+
+            <label for="gradYear">Graduation Year:</label>
+            <input type="text" id="gradYear" name="gradYear"><br><br>
+      
+            <legend>Employment Info</legend>
+            <label for="employer">Current Employer:</label>
+            <input type="text" id="employer" name="employer"><br><br>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle"><br><br>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="text" id="experience" name="experience"><br><br>
+      
+            <legend>Acknowledgement</legend>
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" name="signature"><br><br>
+
+            <label for="esignature">E-Signature Field:</label>
+            <input type="text" id="esignature" name="esignature"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </fieldset>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <style>
+        body {
+
+            background-color: gray;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 4px solid #ccc;
+            border-radius: 5px;
+            max-width: 100%;
+        }
+        label {
+            background-color: lightslategrey;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select {
+
+            background-color: lightgray;
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <center><h2>Personal Information Form</h2></center>
+    <form action="/submit" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"  placeholder="firstname">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"  placeholder="lastname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="name">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" aria-placeholder="gender">
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="DOB">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Subscribe to newsletter
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+

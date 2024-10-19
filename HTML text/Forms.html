@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Industry Survey Form</title>
+</head>
+<body>
+    <h1>IT Industry Survey Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" width="30px"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="role">Your Role in IT Industry:</label><br>
+        <select id="role" name="role">
+            <option value="">Select your role</option>
+            <option value="role1">Role number 1</option>
+            <option value="role2">Role number 2</option>
+        </select><br><br>
+
+        <label for="experience">How many years of experience do you have?</label><br>
+        <input type="text" id="experience" name="experience" placeholder="Enter your experience"><br><br>
+
+        <label for="interests">Which areas of IT interest you? (Select all that apply):</label><br>
+        <input type="checkbox" id="ai" name="interest" value="ai">
+        <label for="ai">Artificial Intelligence</label><br>
+
+        <input type="checkbox" id="cloud" name="interest" value="cloud">
+        <label for="cloud">Cloud Computing</label><br>
+
+        <input type="checkbox" id="data" name="interest" value="data">
+        <label for="data">Data Science</label><br>
+
+        <input type="checkbox" id="cybersecurity" name="interest" value="cybersecurity">
+        <label for="cybersecurity">Cybersecurity</label><br><br>
+
+        <label for="comments">Any comments or suggestions:</label><br>
+        <textarea id="comments" name="comments" placeholder="Share your thoughts..."></textarea><br><br>
+
+        <button type="submit">Submit Survey</button><br><br>
+    </form>
+</body>
+</html>

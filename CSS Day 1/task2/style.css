@@ -42,4 +42,5 @@
 }
 .dotted{
     border: thick dotted;
+    border-color: red;
 }

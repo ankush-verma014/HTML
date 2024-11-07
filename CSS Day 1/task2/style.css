@@ -1,0 +1,39 @@
+.dot{
+    border: dotted;
+}
+.dot1{
+    border: dashed;
+}
+#id{
+    border: solid black;
+}
+#id{
+    border: double;
+}
+.groove{
+    border: groove;
+}
+.ridge{
+    border: ridge;
+}
+.inset{
+    border: inset;
+}
+.outset{
+    border: outset;
+}
+.no{
+    border: none;
+}
+#hidden{
+    border: hidden;
+}
+#mixed{
+    border-top: dotted 2px;
+    border-right: dashed 2px;
+    border-bottom: solid 2px;
+    border-left: double;
+}
+.some{
+    border-width: sometext;
+}

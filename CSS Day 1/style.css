@@ -1,0 +1,8 @@
+div{
+    background-image: url(imagess.jpeg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

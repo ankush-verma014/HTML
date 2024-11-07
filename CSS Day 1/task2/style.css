@@ -35,5 +35,11 @@
     border-left: double;
 }
 .some{
-    border-width: sometext;
+    border: solid black 5px;
+}
+.text{
+    border: solid black;
+}
+.dotted{
+    border: thick dotted;
 }

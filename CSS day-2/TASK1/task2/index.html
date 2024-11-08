@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients Example</title>
+    <style>
+        .gradient-box {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+        }
+
+      
+        .linear-3-even {
+            background: linear-gradient(to bottom, red, yellow, green);
+        }
+
+    
+        .linear-7-even {
+            background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+    
+        .linear-3-uneven {
+            background: linear-gradient(to bottom, red 10%, green 90%,blue 20%);
+        }
+
+    
+        .linear-rainbow {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: lightgreen;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+        }
+
+ 
+        .radial-even {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, red, yellow, green);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p>Note: Color stops are spaced evenly unless percentages are specified.</p>
+
+    <div>
+        <p>3 Color Stops (evenly spaced):</p>
+        <div class="gradient-box linear-3-even"></div>
+    </div>
+
+    <div>
+        <p>7 Color Stops (evenly spaced):</p>
+        <div class="gradient-box linear-7-even"></div>
+    </div>
+
+    <div>
+        <p>3 Color Stops (not evenly spaced):</p>
+        <div class="gradient-box linear-3-uneven"></div>
+    </div>
+
+    <div>
+        <p>Rainbow Background</p>
+        <div class="gradient-box linear-rainbow">Rainbow Background</div>
+    </div>
+
+    <h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+    <div class="radial-even"></div>
+
+</body>
+</html>

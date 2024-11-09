@@ -6,18 +6,18 @@
     <title>HTML5 Form Elements Demonstration</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
             margin: 20px;
         }
         label {
             display: block;
-            margin: 10px 0 5px;
+            margin: 2px  3px;
         }
-        input, select, textarea {
+        /* input,select, textarea { 
             width: 20%;
             padding: 8px;
             margin-bottom: 15px;
-        }
+        } */
         input[type="submit"] {
             width: auto;
             cursor: pointer;
@@ -27,6 +27,7 @@
 <body>
 
     <h1>HTML5 Form Elements Demonstration</h1>
+
     <form>
         <label for="text">Text Input:</label>
         <input type="text" id="text" name="text" placeholder="Enter text">
@@ -54,10 +55,10 @@
         <label for="checkbox">I agree to the terms and conditions</label>
 
         <label>Radio Input:</label>
-        <input type="radio" id="radio1" name="radio" value="option1">
-        <label for="radio1">Option 1</label>
-        <input type="radio" id="radio2" name="radio" value="option2">
-        <label for="radio2">Option 2</label>
+        <input type="radio" id="radio1" name="radio" value="female">
+        <label for="radio1">female</label>
+        <input type="radio" id="radio2" name="radio" value="male">
+        <label for="radio2">male</label>
 
         <label for="select">Select Menu:</label>
         <select id="select" name="select">
@@ -68,7 +69,6 @@
 
         <label for="textarea">Textarea:</label>
         <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your message"></textarea>
-
         <label for="fileUpload">File Upload:</label>
         <input type="file" id="fileUpload" name="fileUpload" accept=".jpg,.jpeg,.png,.pdf">
 

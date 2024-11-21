@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector Demo</title>
+</head>
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+    border: 2px solid black;
+    padding: 0px 5px;    
+}
+
+
+.box-para{
+    color: gray;
+}
+.first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+.head2-1{
+    color: brown;
+}
+
+.box-para2{
+    margin-top: 10px;
+    background-color: rgb(100, 240, 100);
+    padding: 2px 8px;
+    border: 2px solid black;
+}
+
+.word{
+    color: brown;
+}
+
+.box-para3{
+    border: 2px solid black;
+    width: 390px;
+    padding: 2px 5px;
+    color: rgb(18, 18, 131);
+    margin-left: 6px;
+}
+.word2{
+    color: orange;
+}
+
+.box-para4, .box-para5{
+  
+    background-color: rgb(100, 240, 100);
+    padding: 5px 20px;
+    border: 2px solid black;
+    width:200px;
+    height: 150px;
+    text-align: center;
+    margin-bottom:15px ;
+}
+
+.box-para6{
+    border: 2px solid black;
+    width: 390px;
+    padding: 2px 5px;
+    color: green;
+    margin-top: -8px;
+
+}
+
+.box-para7{
+    color:rgb(3, 77, 3);
+    padding: 2px 8px;
+    border: 2px solid black;
+    margin-top: -8px;
+}
+
+.box-para8{
+  
+    background-color: rgb(220, 101, 103);
+    padding: 5px 20px;
+    border: 2px solid black;
+    width:250px;
+    height: 150px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:10px ;
+}
+
+#box-para8{
+    background-color: rgb(89, 189, 189);
+    color: black;
+    border: 2px solid black;
+    padding:2px 8px;
+}
+</style>
+<body>
+    <h1>CSS Selector Demo</h1>
+    <div class="box">
+        <p class="box-para"><i><span class="first-letter">T</span>his is a paragraph styled using an element
+                selector</i></p>
+    </div>
+    <h2 class="head2-1">This is a heading styled using an element selector.</h2>
+    <div class="box">
+        <p class="box-para"><i><span class="first-letter">A</span>nother paragraph styled using an element selector</i>
+        </p>
+    </div>
+    <div class="box-para2">
+        <p><b><span class="word">Start of Div:</span></b> This is a div styled using an element selector. <b><span
+                    class="word">- End of Div</span></b></p>
+    </div>
+    <div class="box-para3">
+        <p><b><span class="word2">Span: </span></b><b>This is a span styled using element selector.</b></p>
+    </div>
+
+    <div class="box-para4">
+        <p><b><span class="word">Start of Div:</span></b> This is a box styled using a class selector. <b><span
+                    class="word">- End of Div</span></b></p>
+    </div>
+
+    <div class="box-para5">
+        <p><b><span class="word">Start of Div:</span></b> Another box styled with the same class. <b><span
+                    class="word">- End of Div</span></b></p>
+    </div>
+
+    <div class="box">
+        <p class="box-para"><i><span class="first-letter">T</span>his is a paragraph styled using an class
+                selector</i></p>
+    </div>
+    <div class="box-para6">
+        <p><b><span class="word2">Span: </span></b><b><i>This is a span styled using element selector.</i></b></p>
+    </div>
+    <div class="box-para7">
+        <p> <b><i> This is a heading styled using a class selector.</i></b></p>
+    </div>
+
+    <div class="box-para8">
+        <p><b><span class="word">Start of Div:</span></b> This is a unique box styled using an ID selector. <b><span
+                    class="word">- End of Div</span></b></p>
+    </div>
+
+    <div id="box-para8">
+        <p><b><span class="word">Start of Div:</span></b> This is another box styled with a different ID selector. <b><span
+                    class="word">- End of Div</span></b></p>
+    </div>
+
+</body>
+
+</html>
